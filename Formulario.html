@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Projeto HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Primeiro Projeto HTML</h1>
+</header>
+
+<main>
+    <form action="#" method="post">
+        <label for="txtNome">Nome:</label>
+        <input id="txtNome" name="nome" type="text" required placeholder="Digite seu nome">
+
+        <label for="txtSobreNome">Sobrenome:</label>
+        <input id="txtSobreNome" name="sobrenome" type="text" required placeholder="Digite seu sobrenome">
+
+        <label for="dtNascimento">Data de Nascimento:</label>
+        <input id="dtNascimento" name="nascimento" type="date" required>
+
+        <label for="txtCpf">CPF:</label>
+        <input id="txtCpf" name="cpf" type="text" required placeholder="Digite seu CPF">
+
+        <label for="txtTelefone">Telefone:</label>
+        <input id="txtTelefone" name="telefone" type="tel" required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="txtEmail">E-mail:</label>
+        <input id="txtEmail" name="email" type="email" required placeholder="exemplo@dominio.com">
+
+        <input type="submit" value="Salvar">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Meu Primeiro Projeto HTML</p>
+</footer>
+
+</body>
+</html>
